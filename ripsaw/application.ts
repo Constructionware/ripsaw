@@ -1,6 +1,7 @@
 import { serve } from "https://deno.land/std@v0.50.0/http/server.ts";
 import { Context } from "./context.ts";
 import { Router } from "./router/router.ts"
+import { VERSION } from "./version.ts"
 
 type ServerConfig = {
     port: number;
@@ -11,6 +12,7 @@ type ServerConfig = {
 export class API {
     private port: number = 8080;
     private host: string = "0.0.0.0";
+    private version: string = VERSION;
     private server: any;
     private router: any;
     constructor(serverConfig?: ServerConfig) {
