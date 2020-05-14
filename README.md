@@ -1,7 +1,7 @@
 # ripsaw
 Web Api Framework written in typescript for Dino
 
-** Getting Started **
+#** Getting Started **
 
 ```typescript
 import { API } from "https://deno.land/x/ripsaw/mod.ts";
