@@ -19,7 +19,7 @@ export class API {
     }
 
     /** Application Start */
-    start(port: number = this.port) {
+    run(port: number = this.port) {
         this.server = serve({ port });
         this.listen();
     }
