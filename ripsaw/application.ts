@@ -5,13 +5,13 @@ import { VERSION } from "./version.ts"
 
 type ServerConfig = {
     port: number;
-    host: string;
+    //host: string;
 
 }
 
 export class API {
     private port: number = 8080;
-    private host: string = "0.0.0.0";
+    //private host: string = "0.0.0.0";
     private version: string = VERSION;
     private server: any;
     private router: any;

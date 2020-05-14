@@ -1,8 +1,8 @@
 import { API } from "../ripsaw/mod.ts";
 
-const api = new API({ host:'0.0.0.0', port: 8080 });
+const api = new API({ port: 8080 });
 
-api.get("/", (context: any function(context) {
+api.get("/", (context: any) => {
     context.send("Hello, Ripsawers !");
 
 })

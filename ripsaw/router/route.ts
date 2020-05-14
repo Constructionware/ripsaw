@@ -5,5 +5,5 @@ export type Route = {
     method: string;
     path: string;
     handler: Handler;
-    timesramp: new Date();
+    
 };
